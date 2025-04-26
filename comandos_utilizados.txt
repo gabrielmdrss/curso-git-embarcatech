@@ -1,0 +1,11 @@
+git init
+git config --local user.name "Gabriel Domingos de Medeiros"
+git config --local user.email "gabriel.mdrs.04@gmail.com"
+git add dados_pessoais.txt
+git commit -m "Adiciona arquivo com nome e matrícula"
+git remote add origin  https://github.com/gabrielmdrss/curso-git-embarcatech.git
+git push -u origin master
+
+git add comandos_utilizados.txt
+git commit -m "Adiciona lista de comandos utilizados"
+git push -u origin master

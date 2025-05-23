@@ -1,0 +1,33 @@
+mkdir tarefa-unidade3-git
+cd tarefa-unidade3-git
+git init
+echo "Conteúdo do arquivo 1" > arquivo1.txt
+echo "Conteúdo do arquivo 2" > arquivo2.txt
+echo "Conteúdo do arquivo 3" > arquivo3.txt
+git add arquivo1.txt arquivo2.txt arquivo3.txt
+git commit -m "Commit inicial: adiciona três arquivos de texto"
+echo "Nova linha no arquivo 1" >> arquivo1.txt
+echo "Nova linha no arquivo 2" >> arquivo2.txt
+git status
+git diff
+git add arquivo1.txt arquivo2.txt
+git commit -m "Altera arquivo1.txt e arquivo2.txt"
+git log
+git log --oneline
+git log --stat
+git log --graph --oneline --all
+git revert HEAD
+echo "Modificação temporária" >> arquivo3.txt
+git stash
+git checkout -b nova-feature
+git checkout main
+git stash list
+git stash pop
+git reflog
+git log --oneline
+git tag -a v1.0-inicial <hash_do_commit_inicial> -m "Versão estável inicial do projeto"
+nano comandos.txt
+git add comandos.txt
+git commit -m "Adiciona comandos.txt com todos os comandos utilizados"
+git push -u origin main
+git push origin v1.0-inicial
